@@ -1,5 +1,28 @@
 # Robs-Google-News
+## Purpose
+This Python program is designed to automate the process of reading data from an API (or CSV file/SQL database), processing the data (formatting, cleaning, etc.), and updating a SQL table with the processed data. The automation is achieved using the Windows Task Scheduler, which allows the program to execute at a predefined time without human intervention.The program ensures the data is formatted according to predefined rules, and logs any exceptions or errors that occur during execution.
+I set out to fetch news articles related to the Swedish manufacturing company Alfa Laval's core product "heat exchangers", and then save these articles in a database.
 
+## How the Program Works
+1. **Data Loading**: The program begins by reading data from News API's API. 
+   
+2. **Data Processing**: After loading the data, the script processes it by performing tasks such as:
+   - Converting data types (e.g., converting strings to datetime).
+   - Cleaning data (e.g., removing null values or duplicates).
+   - Formatting data according to certain rules.
+
+3. **SQL Table Update**: Once the data is processed, the program connects to a local SQLite database and updates an existing table with the new, processed data. The table is either replaced or updated with the latest data.
+
+4. **Logging & Error Handling**: The script contains built-in error handling to catch exceptions during the data processing and database update steps. Errors and important events (like successful table updates) are logged in a `pipeline.log` file.
+
+5. **Scheduled Execution**: The script is executed automatically at a set time using Windows Task Scheduler, ensuring the process runs without manual input.
+
+
+## Task Scheduler Setup
+1. Opened Windows Task Scheduler.
+2. Created a new task.
+3. Set up triggers weekly at 8 AM
+4. Choose my Python interpreter and script path under Actions.
 
 
 <table border="1" class="dataframe">
