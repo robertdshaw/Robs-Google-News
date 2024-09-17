@@ -8,7 +8,7 @@ I set out to fetch news articles related to the Swedish manufacturing company Al
    
 2. **Data Processing**: After loading the data, the script processes it by performing tasks such as:
    - Converting data types from ISO 8601 complete date to a basic date type, and sorting dates by most recent article first. 
-   - Formatting data according to snsure columns are extracted properly and that missing data is handled appropriately.
+   - Formatting data to ensure columns are extracted properly and that missing data is handled appropriately.
 
 3. **SQL Table Update**: Once the data is processed and saved, the program connects to a local SQLite database and updates a newly-created table with the new, processed articles. It allows the database connection to be accessed by several programs in parallel. 
 ![Screenshot 2024-09-17 163529](https://github.com/user-attachments/assets/c4342554-88aa-457a-badc-9cdc4c487b6e)
