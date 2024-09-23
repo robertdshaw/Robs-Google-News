@@ -20,4 +20,5 @@ I set out to fetch news articles related to the Swedish manufacturing company Al
 ![Screenshot 2024-09-17 165804](https://github.com/user-attachments/assets/0e94e03b-2a86-4c05-bf5a-4067a4e7cc2c)
 
 6. **Scheduled Execution**: The script is executed automatically 3 times a week at 8am using Windows Task Scheduler, ensuring the process runs without manual input.
-<img width="682" alt="image" src="https://github.com/user-attachments/assets/1f0a9d01-969a-4f05-b877-f93a606abb7b">
+<img width="956" alt="image" src="https://github.com/user-attachments/assets/afa52ea6-54f2-4d36-bc4d-6a2aaee1a44a">
+
