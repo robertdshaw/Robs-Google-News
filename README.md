@@ -1,7 +1,7 @@
 # Robs-Google-News
 ## Purpose
-This Python program is designed to automate the process of reading data from an API (or CSV file/SQL database), processing the data (formatting, cleaning, etc.), and updating a SQL table with the processed data. The automation is achieved using the Windows Task Scheduler, which allows the program to execute at a predefined time without human intervention.The program ensures the data is formatted according to predefined rules, and logs any exceptions or errors that occur during execution.
-I set out to fetch news articles related to the Swedish manufacturing company Alfa Laval's core product "heat exchanger", and then save these articles in a database.
+This Python program is designed to automate the process of reading data from an API, processing it (formatting, cleaning, etc.), and updating a SQL table with the processed data. The automation is done using the Windows Task Scheduler, which allows the program to execute at a predefined time without manual intervention. The program ensures the data is formatted according to predefined rules, and logs any exceptions or errors that occur during execution.
+The primary business goal achieved was to fetch news articles related to the Swedish manufacturing company Alfa Laval's core product "heat exchanger", and then save these articles in a database.
 
 ## How the Program Works
 1. **Data Loading**: The program begins by reading data from News API's API which is found at https://newsapi.org/docs/endpoints/everything and after logging in generates an API key which is used to fill a database name called news.db 
