@@ -11,14 +11,13 @@ I set out to fetch news articles related to the Swedish manufacturing company Al
    - Formatting data to ensure columns are extracted properly and that missing data is handled appropriately.
 
 3. **SQL Table Update**: Once the data is processed and saved, the program connects to a local SQLite database and updates a newly-created table with the new, processed articles. It allows the database connection to be accessed by several programs in parallel. 
-![Screenshot 2024-09-17 163529](https://github.com/user-attachments/assets/c4342554-88aa-457a-badc-9cdc4c487b6e)
+<img width="554" alt="image" src="https://github.com/user-attachments/assets/2548c6d1-60d4-4324-96d5-944985f6285c">
 
 4. **Logging & Error Handling**: The script contains built-in error handling to catch exceptions during the data processing and database update steps. Errors and important events (like successful table updates) are logged in a `newsapi.log` file.
-![Screenshot 2024-09-17 163927](https://github.com/user-attachments/assets/b26828b9-376c-4670-8352-be304f8fe66e)
+<img width="754" alt="image" src="https://github.com/user-attachments/assets/7d0a94e6-cdc8-4f32-b4da-3e28d3ad2c5a">
 
 5. **Testing**: A separate test script called core_testing tests some of the classes from the NewsAPIClient module using unittest methods.
-![Screenshot 2024-09-17 165804](https://github.com/user-attachments/assets/0e94e03b-2a86-4c05-bf5a-4067a4e7cc2c)
+<img width="496" alt="image" src="https://github.com/user-attachments/assets/50886424-8422-4e72-8bf5-563fd1b0aaa9">
 
 6. **Scheduled Execution**: The script is executed automatically 3 times a week at 8am using Windows Task Scheduler, ensuring the process runs without manual input.
-<img width="956" alt="image" src="https://github.com/user-attachments/assets/afa52ea6-54f2-4d36-bc4d-6a2aaee1a44a">
-
+<img width="780" alt="image" src="https://github.com/user-attachments/assets/a6935f5c-fe99-4ca8-85af-bac373fc799b">
