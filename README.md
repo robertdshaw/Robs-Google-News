@@ -4,7 +4,7 @@ This Python program is designed to automate the process of reading data from an 
 The primary business goal achieved was to fetch news articles related to the Swedish manufacturing company Alfa Laval's core product "heat exchanger", and then save these articles in a database.
 
 ## How the Program Works
-1. **Data Loading**: The program begins by reading data from News API's API which is found at https://newsapi.org/docs/endpoints/everything and after logging in generates an API key which is used to fill a database name called news.db 
+1. **Data Loading**: The program begins by reading data from News API's API which is found at https://newsapi.org/docs/endpoints/everything and after logging in generates an API key which is used to then feed into a database called news.db.
    
 2. **Data Processing**: After loading the data, the script processes it by performing tasks such as:
    - Converting data types from ISO 8601 complete date to a basic date type, and sorting dates by most recent article first. 
