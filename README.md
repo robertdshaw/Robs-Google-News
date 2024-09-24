@@ -19,5 +19,7 @@ The primary business goal achieved was to fetch news articles related to the Swe
 5. **Testing**: A separate test script called core_testing tests some of the classes from the NewsAPIClient module using unittest methods.
 <img width="496" alt="image" src="https://github.com/user-attachments/assets/50886424-8422-4e72-8bf5-563fd1b0aaa9">
 
-6. **Scheduled Execution**: The script is executed automatically 3 times a week at 8am using Windows Task Scheduler, ensuring the process runs without manual input.
+6. **Database Exploratory Review**: I used a notebook file called news_db to manually explore the SQL database table and gain basic insights into its structure and potential issues. The code fetches news articles related to "heat exchanger" using the NewsAPIClient, processes them, and displays the results. It then connects to the SQLite database (news.db), reads the existing articles from the 'news' table, and outputs the number of articles along with the date of the most recent one. Two sections are commented out: one for deleting all rows from the 'news' table and another for checking the status of article URLs. These were planned as potential future improvements but were not implemented due to time constraints.
+
+7. **Scheduled Execution**: The script is executed automatically 3 times a week at 8am using Windows Task Scheduler, ensuring the process runs without manual input.
 <img width="780" alt="image" src="https://github.com/user-attachments/assets/a6935f5c-fe99-4ca8-85af-bac373fc799b">
