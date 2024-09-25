@@ -7,7 +7,7 @@ logging.basicConfig(
     filename='news_api.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
-    filemode='a'
+    filemode='w'
 )
 
 def main(api_key, query="heat AND exchanger"):
